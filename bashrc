@@ -11,5 +11,5 @@ _detach() {
     fi
 }
 
-complete -F _detach det
+complete -F _detach detach
 
