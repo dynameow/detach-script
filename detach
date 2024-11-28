@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# detach 
+# Run program detached from the terminal (nohup and supressed output)
+
+if [ "$#" -lt 1 ]; then
+    echo "Usage: $(basename "$0") <command>"
+    exit 1
+fi
+
+nohup "$@" >/dev/null 2>&1 &
+
