@@ -33,3 +33,6 @@ _detach() {
 
 complete -o default -F _detach detach
 ```
+
+# Contribution
+If you've set up this script or something similar on other shells, such as zsh, please consider contributing your (completion) configuration so others can benefit from it.
