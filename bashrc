@@ -5,11 +5,11 @@ _detach() {
     local prev=${COMP_WORDS[COMP_CWORD-1]}
 
     if [ $COMP_CWORD -eq 1 ]; then
-        COMPREPLY=( $(compgen -c -- "$cur") ) # program completion
+        COMPREPLY=( $(compgen -c -- "$cur") )
     else
-        COMPREPLY=( $(compgen -f -- "$cur") ) # file completion
+        COMPREPLY=()
     fi
 }
 
-complete -F _detach detach
+complete -o default -F _detach detach
 
